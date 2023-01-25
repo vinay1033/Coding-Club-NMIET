@@ -567,3 +567,38 @@ footer .social-circle li i {
   line-height: 60px;
   text-align: center;
 }
+
+
+
+
+.loader{
+	width: 100px;
+	height: 100px;
+	top: calc(50vh - 50px);
+	left: calc(50vw - 50px);
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader::before{
+	content:'';
+	height: 30px;
+	width: 30px;
+	background: transparent;
+	border-radius: 50px;
+	border: 20px ridge;
+	border-width: 25px;
+	border-color: #2EE3E8 transparent;
+	animation: load 1s infinite;
+}
+
+@keyframes load{
+	50%{
+		transform: rotatez(180deg);
+	}
+	100%{
+		transform: rotatez(360deg);
+	}
+}
