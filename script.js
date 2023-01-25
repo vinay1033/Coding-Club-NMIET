@@ -20,3 +20,8 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active");
   }
 })
+
+
+setTimeout(function(){
+	$('.navigation').fadeToggle();
+},1000);
