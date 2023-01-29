@@ -22,6 +22,4 @@ window.addEventListener("scroll", () => {
 })
 
 
-setTimeout(function(){
-	$('.navigation').fadeToggle();
-},1000);
+
